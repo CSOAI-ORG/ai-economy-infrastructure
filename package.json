@@ -1,0 +1,56 @@
+{
+  "name": "@meok-global/ai-economy-infrastructure",
+  "version": "1.0.0",
+  "description": "Unified AI Economy Infrastructure — the brain of the CSOAI ecosystem. Aggregates 10 specialist MCP servers covering governance, certification, cybersecurity, verification, education, quantum security, defence, pharma, and mentoring.",
+  "author": "MEOK AI Labs — Cyber Security Global Alliance",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meok-global/mcp-servers.git",
+    "directory": "packages/ai-economy-infrastructure"
+  },
+  "homepage": "https://meok-global.org",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "ai-economy-infrastructure-mcp": "dist/index.js"
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js",
+    "start": "node dist/index.js",
+    "test": "node --test dist/**/*.test.js",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "ai-governance",
+    "ai-safety",
+    "compliance",
+    "certification",
+    "cybersecurity",
+    "quantum-security",
+    "ecosystem",
+    "orchestration"
+  ]
+}
